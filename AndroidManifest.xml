@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="se.umu.campus"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="7"/>
+    <application android:icon="@drawable/umu" android:label="@string/app_name" android:theme="@style/standard" android:debuggable="true">
+    	<uses-library android:name="com.google.android.maps" />
+		
+        <activity android:name=".CampusWebMapActivity"
+                  android:label="UMU" android:launchMode="singleTask">
+            
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_map_place_point" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_map" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="place_pin" />
+            </intent-filter>
+            
+            <intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+        </activity>
+        
+        <!-- <activity android:name=".Campus"
+                  android:label="Umeå Campus" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_map_place_point" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_map" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="place_pin" />
+            </intent-filter>
+        </activity>-->
+        
+        <activity android:name=".FeedActivity"
+                  android:label="UMU" android:launchMode="singleTask">
+           
+			<intent-filter>
+				<action android:name="se.umu.campus.intent.action_feed" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".FacebookActivity"
+                  android:label="UMU" android:launchMode="singleTask">
+            
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_fb" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".WelcomeActivity"
+                  android:label="UMU" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_welcome" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".YouTubeActivity"
+                  android:label="UMU" android:launchMode="singleTask">
+            
+            <intent-filter>
+                <action android:name="se.umu.campus.intent.action_yt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".search.CampusSearchActivity" android:label="UMU">  
+        	<intent-filter>
+                <action android:name="se.umu.campus.intent.action_map_search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".WebViewActivity" android:label="UMU" android:launchMode="singleTask">  
+            <intent-filter>  
+                <action android:name="se.umu.campus.intent.action_browse"/>  
+                <category android:name="android.intent.category.DEFAULT"/>  
+            </intent-filter>  
+        </activity>
+
+		<meta-data android:name="android.app.default_searchable"
+			android:value=".CampusWebMapActivity" />
+
+		<provider android:name="se.umu.campus.search.CampusSuggestionProvider"
+              android:authorities="se.umu.campus.search.CampusSuggestionProvider" />
+
+    </application>
+	
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest> 

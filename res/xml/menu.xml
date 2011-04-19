@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/welcome"
+          android:icon="@android:drawable/ic_menu_info_details"
+          android:title="@string/welcome"
+          android:background="@drawable/header_background_gradient"
+          />
+    
+    <item android:id="@+id/feed"
+          android:icon="@drawable/clock48"
+          android:title="@string/feed"
+          android:background="@drawable/header_background_gradient"
+          />
+    
+    <item android:id="@+id/fb"
+          android:icon="@drawable/dialog48"
+          android:title="@string/fb"
+          android:background="@drawable/header_background_gradient"
+          />
+    
+    <item android:id="@+id/yt"
+          android:icon="@drawable/monitor48"
+          android:title="@string/yt"
+          android:background="@drawable/header_background_gradient"
+          />
+          
+    <item android:id="@+id/map"
+          android:icon="@android:drawable/ic_menu_mapmode"
+          android:title="@string/campus_map"
+          android:background="@drawable/header_background_gradient" 
+          />
+          
+    <item android:id="@+id/map_search"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="@string/campus_map_search"
+          android:background="@drawable/header_background_gradient" 
+          />
+</menu>

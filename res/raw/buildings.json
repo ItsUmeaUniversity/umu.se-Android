@@ -1,0 +1,79 @@
+{
+	"buildings" : [
+		{  
+			"name": "MIT-huset",  
+			"description": "MIT-huset",  
+			"geo": { 
+				"type": "Point", 
+				"coordinates": [63.82050, 20.307734] 
+			},  
+			"children" : [
+				{
+					"name" : "MA126",
+					"url" : "/info/126",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0]
+					}
+				},{
+					"name" : "MA226",
+					"url" : "/info/226",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0]
+					}
+				}
+			]
+		},
+		{  
+			"name": "Samhällsvetarhuset",  
+			"description": "Samhällsvetarhuset",  
+			"geo": { 
+				"type": "Point", 
+				"coordinates": [63.821673, 20.305594] 
+			},  
+			"children" : [
+				{
+					"name" : "Hörsal A",
+					"url" : "/info/126",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0]
+					}
+				},{
+					"name" : "Hörsal B",
+					"url" : "/info/226",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0] 
+					}
+				}
+			]
+		},
+		{  
+			"name": "Förvaltningshuset",  
+			"description": "Förvaltningshuset",  
+			"geo": { 
+				"type": "Point", 
+				"coordinates": [63.820739, 20.301061] 
+			},  
+			"children" : [
+				{
+					"name" : "Ladokenheten",
+					"url" : "/info/126",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0]
+					}
+				},{
+					"name" : "Print och media",
+					"url" : "/info/226",
+					"geo" : { 
+						"type": "Point", 
+						"coordinates": [100.0, 0.0] 
+					}
+				}
+			]
+		}
+	]
+}

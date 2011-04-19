@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome</string>
+    <string name="app_name">UMU</string>
+	<string name="campus_map">Campus map</string>
+	<string name="campus_map_search">Search campus</string>
+	<string name="feed">News</string>
+	<string name="fb">Facebook</string>
+	<string name="yt">YouTube</string>
+	<string name="welcome_page">welcome_en.html</string>
+	<string name="map_page">http://campus-eu.s3.amazonaws.com/smartphone.htm?hl=en</string>
+	<string name="youtube_page">http://gdata.youtube.com/feeds/api/users/umeauniversitet/uploads?alt=rss</string>
+	<string name="news_page">http://www.umu.se/english/rss/news.rss</string>
+	<string name="facebook_page">http://graph.facebook.com/UmeaUniv/feed?limit=25</string>
+	<string name="facebook_picture">http://graph.facebook.com/UmeaUniv/picture</string>
+	<string name="likes">likes</string>
+	<string name="comments">comments</string>
+</resources>

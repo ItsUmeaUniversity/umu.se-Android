@@ -1,0 +1,19 @@
+{
+	"result" : [
+		{  
+			"id" : 0,
+			"name" : "MIT-huset",  
+			"description" : "MIT-huset"
+		},
+		{  
+			"id" : 1,
+			"name": "Samhällsvetarhuset",  
+			"description": "Samhällsvetarhuset"
+		},
+		{  
+			"id" : 2,
+			"name": "Förvaltningshuset",  
+			"description": "Förvaltningshuset"
+		}
+	]
+}
